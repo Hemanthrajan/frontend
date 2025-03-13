@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDM</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="icon" href="assests/Tnega.png">
+ 
+</head>
+<body>
+    <header>
+        <h1>PEST DETECTION MODEL</h1>
+        
+    </header>
+    <main>
+        <div class="panel">
+            <div class="zindex">
+                <h2>Select and Display Your Image</h2>
+                <input type="file" id="imageInput" accept="image/*">
+    
+                <div class="content-container">
+                    <!-- Left Side: Image Preview -->
+                    <div class="image-container" id="imageContainer">
+                        <p>No image chosen</p>
+                    </div>
+    
+                    <!-- Right Side: Output Container -->
+                    <div class="output-container">
+                        <h3></h3>
+                        <img id="outputImage" src=""  alt="Processed Image" style="display: none; ">
+                        <p id="resultMessage">Output</p>
+                    </div>
+                </div>
+    
+                <button class="detect">DETECT</button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="test.js"></script>
+</html>
+
+
+
+
+
+
+

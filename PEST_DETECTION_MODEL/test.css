@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px 0;
+    margin-top: 20px;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.panel {
+    border-radius: 50px;
+    height: auto;
+    width: 80%;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    
+  
+}
+
+.zindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.image-container,
+.output-container {
+    width: 40%;
+    border: 2px dashed #c6b1b1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4/3;
+}
+
+.image-container img,
+.output-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+button.detect {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.detect:hover {
+    background-color: #005fa3;
+}
+
+.output-container p {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
