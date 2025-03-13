@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="icon" href="assests/Tnega.png">
+</head>
+<body>
+    <div class="form-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TamilNadu_Logo.svg" alt="Muzzle Detection Logo" class="logo" style="height: 130px; width: 140px;">
+        <h1>Welcome to Muzzle Detection Model</h1>
+        <p>Please register to create an account</p>
+        <form action="register" method="POST">
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+            <label>
+                <input type="checkbox" required> I agree to the terms and conditions
+            </label>
+            <button type="submit">Register</button>
+        </form>
+        <a href="login.html">Already have an account? Login</a>
+    </div>
+</body>
+</html>
