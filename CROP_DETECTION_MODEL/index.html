@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDM LOGIN</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assests/Tnega.png">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TamilNadu_Logo.svg" alt="Tnega Logo" class="logo" style="height: 130px; width: 145px;">
+            <h1>Crop Detection Model</h1>
+        </div>
+        <div >
+            <h2>Welcome!</h2>
+            <form class="login-form" onsubmit="return validateLogin(event)">
+                <label for="username" style="font-weight: bold;">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+                <label for="password" style="font-weight: bold;">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+                <div class="captcha">
+                    <input type="checkbox" id="recaptcha">
+                    <label for="recaptcha" style="font-weight: bold;">I'm not a robot</label>
+                </div>
+            
+                <p id="error-message" class="error" style="display: none;">Invalid login or captcha not checked!</p>
+            
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+             <a href="#" class="forgot-password" style="font-weight: bold;">Forgot Password</a>
+          
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

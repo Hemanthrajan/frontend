@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDM</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <main>
+        <div class="panel">
+            <h1>CROP DETECTION MODEL</h1>
+            <div class="zindex">
+                <div class="dropdown-container">
+                    <label for="cropName">Crop Name:</label>
+                    <select id="cropName">
+                        <option value="" disabled selected>Select Crop Name</option>
+                        <option value="banana">BANANA</option>
+                        <option value="coconut">COCONUT</option>
+                    </select>
+
+                    <label for="stage">Stage:</label>
+                    <select id="stage">
+                        <option value="" disabled selected>Select Stage</option>
+                        <option value="vegetation">VEGETATION</option>
+                        <option value="flowering">FLOWERING</option>
+                        <option value="fullgrown">FULL GROWN</option>
+                        <option value="harvesting">HARVESTING</option>
+                    </select>
+                </div>
+
+                <input type="file" id="imageInput" accept="image/*">
+
+                <div class="content-container">
+                    <div class="image-container" id="imageContainer">
+                        <p>No image chosen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="embedding">
+                <button id="detectButton" class="ge">Detect</button>
+            </div>
+        </div>
+    </main>
+    <script src="test.js"></script>
+</body>
+</html>
