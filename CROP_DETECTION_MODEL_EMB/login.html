@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="assets/Tnega.png">
+</head>
+<body>
+    <div class="container">
+        <div class="login-panel">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TamilNadu_Logo.svg" alt="Tamil Nadu Logo" class="logo" style="height: 130px; width: 140px;">
+            <h1>Welcome to Muzzle Detection Model</h1>
+            <p>Please log in to continue</p>
+            <form class="login-form" onsubmit="validateLogin(event)">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <div class="captcha">
+                    <input type="checkbox" id="recaptcha">
+                    <label for="recaptcha">I'm not a robot</label>
+                </div>
+
+                <p class="error" id="error-message" style="display:none;">Invalid credentials or captcha not checked.</p>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div class="links">
+                <a href="registration.html" class="create-account">Create Account</a>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+               
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

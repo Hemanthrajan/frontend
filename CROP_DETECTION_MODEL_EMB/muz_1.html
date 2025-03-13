@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM</title>
+    <link rel="stylesheet" href="muz_1.css">
+    <link rel="icon" href="assests/Tnega.png">
+   
+</head>
+<body>
+    <header>
+        <h1>MUZZLE DETECTION MODEL</h1>
+        
+    </header>
+    <main>
+        
+        <div class="panel">
+            <div class="zindex">
+                <h2>Select and Display Your Image</h2>
+                <input type="file" id="imageInput" accept="image/*">
+    
+                <div class="content-container">
+                    <!-- Left Side: Image Preview -->
+                    <div class="image-container" id="imageContainer">
+                        <p>No image chosen</p>
+                    </div>
+
+                </div>
+    
+                <button class="detect">SEND</button>
+            </div>
+
+            <div class="embedding">
+                <h2>Enter Folder Name:</h2> <input type="text" placeholder="Enter Folder Name">  <button class="ge">Generate Embedding</button>
+
+                <p class="error">Warning!:-Folder name should be same as Filename</p>
+
+            
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="muz_1.js"></script>
+</html>
+
+
+
+
+
+
+
